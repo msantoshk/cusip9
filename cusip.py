@@ -24,5 +24,6 @@ def get_cusip9(cusip8):
     return cusip8 + str((10 - (sum % 10)) % 10)
 
 
-t = get_cusip9('TC6BNDOJ')
+t = get_cusip9('38259P50')
+# expected Google Inc.: 38259P508
 print(t)
